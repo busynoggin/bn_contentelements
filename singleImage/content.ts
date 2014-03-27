@@ -179,6 +179,7 @@ tt_content.singleImage {
 		default.positionCoordinates.split.wrap = left: |px;|| top: |px;
 	}
 
+	// Render image
 	30 = CASE
 	30 {
 		key.data = register:singleImageHeight
@@ -210,23 +211,4 @@ tt_content.singleImage {
 		default.renderObj.file.width.dataWrap = {register:singleImageWidth}c
 		default.renderObj.file.height.dataWrap = {register:singleImageHeight}c
 	}
-	// Render image
-
-
-	40 = TEXT
-	40.insertData = 1
-	40.value (
-		singleImageCSSClass: {register:singleImageCSSClass}<br />
-		singleImageMargin: {register:singleImageMargin}<br />
-		singleImagePadding: {register:singleImagePadding}<br />
-		singleImageBorder: {register:singleImageBorder}<br />
-		singleImageDisplay: {register:singleImageDisplay}<br />
-		singleImageFloat: {register:singleImageFloat}<br />
-		singleImagePostion: {register:singleImagePosition}<br />
-		singleImageZindex: {register:singleImageZindex}<br />
-		singleImageWidth: {register:singleImageWidth}<br />
-		singleImageHeight: {register:singleImageHeight}<br />
-		positionCoordinates: {register:positionCoordinates}<br />
-		ration {t3datastructure : pi_flexform->imageAspectRatio}
-	)
 }
