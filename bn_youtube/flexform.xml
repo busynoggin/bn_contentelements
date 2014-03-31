@@ -1,0 +1,155 @@
+<T3DataStructure>
+	<ROOT>
+		<TCEforms>
+			<cshFile>LLL:EXT:bn_video/bn_youtube/locallang_csh.xml</cshFile>
+		</TCEforms>
+		<type>array</type>
+		<el>
+			<aspectRatio>
+				<TCEforms>
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.aspectRatio.label</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.aspectRatio.widescreen</numIndex>
+								<numIndex index="1">169</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.aspectRatio.standard</numIndex>
+								<numIndex index="1">43</numIndex>
+							</numIndex>
+						</items>
+						<default type="integer">169</default>
+					</config>
+				</TCEforms>
+			</aspectRatio>
+			<videoID>
+				<TCEforms>
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.videoID</label>
+					<config>
+						<type>input</type>
+						<size>20</size>
+					</config>
+				</TCEforms>
+			</videoID>
+			<title>
+				<TCEforms>
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.title</label>
+					<config>
+						<type>input</type>
+						<size>20</size>
+					</config>
+				</TCEforms>
+			</title>
+			<autoPlay>
+				<TCEforms type="array">
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.autoPlay</label>
+					<config type="array">
+						<type>check</type>
+						<eval>int</eval>
+						<default type="integer">0</default>
+					</config>
+				</TCEforms>
+			</autoPlay>
+			<startPoint>
+				<TCEforms>
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.startPoint</label>
+					<config>
+						<type>input</type>
+						<size>20</size>
+					</config>
+				</TCEforms>
+			</startPoint>
+			<lightboxDisplay>
+				<TCEforms type="array">
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.lightboxDisplay</label>
+					<config type="array">
+						<type>check</type>
+						<eval>int</eval>
+						<default type="integer">0</default>
+					</config>
+					<onChange>reload</onChange>
+				</TCEforms>
+			</lightboxDisplay>
+			<image>
+				<TCEforms>
+					<label>LLL:EXT:bn_ce_youtube_vimeo/youTubeVimeo/locallang.xml:flexform.youTubeVimeo.image</label>
+					<config>
+						<type>group</type>
+						<internal_type>file</internal_type>
+						<allowed>gif,jpg,jpeg,png</allowed>
+						<max_size>5000</max_size>
+						<uploadfolder>uploads/tx_bnvideo/bn_youtube</uploadfolder>
+						<maxitems>1</maxitems>
+						<size>1</size>
+						<selectedListStyle>width:200px</selectedListStyle>
+						<show_thumbs>1</show_thumbs>
+					</config>
+					<displayCond>FIELD:lightboxDisplay:=:1</displayCond>
+				</TCEforms>
+			</image>
+			<imageAspectRatio>
+				<TCEforms>
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.label</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.0</numIndex>
+								<numIndex index="1">0</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.169</numIndex>
+								<numIndex index="1">169</numIndex>
+							</numIndex>
+							<numIndex index="2" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.43</numIndex>
+								<numIndex index="1">43</numIndex>
+							</numIndex>
+							<numIndex index="3" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.32</numIndex>
+								<numIndex index="1">32</numIndex>
+							</numIndex>
+							<numIndex index="4" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.11</numIndex>
+								<numIndex index="1">11</numIndex>
+							</numIndex>
+							<numIndex index="5" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.21</numIndex>
+								<numIndex index="1">21</numIndex>
+							</numIndex>
+							<numIndex index="6" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.31</numIndex>
+								<numIndex index="1">31</numIndex>
+							</numIndex>
+							<numIndex index="7" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.41</numIndex>
+								<numIndex index="1">41</numIndex>
+							</numIndex>
+							<numIndex index="8" type="array">
+								<numIndex index="0">LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.imageAspectRatio.51</numIndex>
+								<numIndex index="1">51</numIndex>
+							</numIndex>		
+						</items>
+						<default>0</default>
+					</config>
+					<displayCond>FIELD:lightboxDisplay:=:1</displayCond>
+				</TCEforms>
+			</imageAspectRatio>
+			<showPlayButton>
+				<TCEforms type="array">
+					<label>LLL:EXT:bn_video/bn_youtube/locallang.xml:flexform.bn_youtube.showPlayButton</label>
+					<config type="array">
+						<type>check</type>
+						<eval>int</eval>
+						<default type="integer">1</default>
+					</config>
+					<displayCond>FIELD:lightboxDisplay:=:1</displayCond>
+				</TCEforms>
+			</showPlayButton>
+		</el>
+	</ROOT>
+</T3DataStructure>
+
+
