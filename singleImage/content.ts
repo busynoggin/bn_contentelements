@@ -202,7 +202,7 @@ tt_content.singleImage {
 				params = class="single-image{register:singleImageCSSClass}" style="{register:singleImageMargin}{register:singleImagePadding}{register:singleImageBorder}{register:singleImageDisplay}{register:singleImageFloat}{register:singleImagePosition}{register:positionCoordinates}{register:singleImageZindex}"
 				params.insertData = 1
 				stdWrap.typolink {
-					parameter.data = t3datastructure : pi_flexform->link
+					parameter.data = file:current:link
 				}
 			}
 		}
