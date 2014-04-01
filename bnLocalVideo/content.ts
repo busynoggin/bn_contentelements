@@ -1,5 +1,5 @@
-tt_content.bn_localvideo = COA
-tt_content.bn_localvideo {
+tt_content.bnLocalVideo = COA
+tt_content.bnLocalVideo {
 
 	// Show the standard content element header.
 	5 = < lib.stdheader

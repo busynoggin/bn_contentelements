@@ -4,16 +4,16 @@
 		<el>
 			<aspectRatio>
 				<TCEforms>
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.aspectRatio.label</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.aspectRatio.label</label>
 					<config>
 						<type>select</type>
 						<items type="array">
 							<numIndex index="0" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.aspectRatio.widescreen</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.aspectRatio.widescreen</numIndex>
 								<numIndex index="1">0</numIndex>
 							</numIndex>
 							<numIndex index="1" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.aspectRatio.standard</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.aspectRatio.standard</numIndex>
 								<numIndex index="1">1</numIndex>
 							</numIndex>
 						</items>
@@ -23,7 +23,7 @@
 			</aspectRatio>
 			<video>
 				<TCEforms type="array">
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.video</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.video</label>
 					<config type="array">
 						<type>input</type>
 						<size>55</size>
@@ -45,7 +45,7 @@
 			</video>
 			<title>
 				<TCEforms>
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.title</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.title</label>
 					<config>
 						<type>input</type>
 						<size>20</size>
@@ -54,7 +54,7 @@
 			</title>
 			<autoPlay>
 				<TCEforms type="array">
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.autoPlay</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.autoPlay</label>
 					<config type="array">
 						<type>check</type>
 						<eval>int</eval>
@@ -64,7 +64,7 @@
 			</autoPlay>
 			<image>
 				<TCEforms type="array">
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.image</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.image</label>
 					<config type="array">
 						<type>group</type>
 						<internal_type>file</internal_type>
@@ -82,44 +82,44 @@
 			</image>
 			<imageAspectRatio>
 				<TCEforms>
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.label</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.label</label>
 					<config>
 						<type>select</type>
 						<items type="array">
 							<numIndex index="0" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.0</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.0</numIndex>
 								<numIndex index="1">0</numIndex>
 							</numIndex>
 							<numIndex index="1" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.169</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.169</numIndex>
 								<numIndex index="1">169</numIndex>
 							</numIndex>
 							<numIndex index="2" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.43</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.43</numIndex>
 								<numIndex index="1">43</numIndex>
 							</numIndex>
 							<numIndex index="3" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.32</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.32</numIndex>
 								<numIndex index="1">32</numIndex>
 							</numIndex>
 							<numIndex index="4" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.11</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.11</numIndex>
 								<numIndex index="1">11</numIndex>
 							</numIndex>
 							<numIndex index="5" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.21</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.21</numIndex>
 								<numIndex index="1">21</numIndex>
 							</numIndex>
 							<numIndex index="6" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.31</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.31</numIndex>
 								<numIndex index="1">31</numIndex>
 							</numIndex>
 							<numIndex index="7" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.41</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.41</numIndex>
 								<numIndex index="1">41</numIndex>
 							</numIndex>
 							<numIndex index="8" type="array">
-								<numIndex index="0">LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.imageAspectRatio.51</numIndex>
+								<numIndex index="0">LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.imageAspectRatio.51</numIndex>
 								<numIndex index="1">51</numIndex>
 							</numIndex>
 						</items>
@@ -129,7 +129,7 @@
 			</imageAspectRatio>
 			<lightboxDisplay>
 				<TCEforms type="array">
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.lightboxDisplay</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.lightboxDisplay</label>
 					<config type="array">
 						<type>check</type>
 						<eval>int</eval>
@@ -140,7 +140,7 @@
 			</lightboxDisplay>
 			<showPlayButton>
 				<TCEforms type="array">
-					<label>LLL:EXT:bn_video/bn_localvideo/locallang.xml:flexform.bn_localvideo.showPlayButton</label>
+					<label>LLL:EXT:bn_contentelements/bnLocalVideo/locallang.xml:flexform.bnLocalVideo.showPlayButton</label>
 					<config type="array">
 						<type>check</type>
 						<eval>int</eval>
