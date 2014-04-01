@@ -4,5 +4,8 @@ if (!defined('TYPO3_MODE')) {
 }
 
 tx_weccontentelements_lib::addContentElement($_EXTKEY, 'singleImage');
+tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnYoutube');
+tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnVimeo');
+tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnLocalVideo');
 
 ?>
