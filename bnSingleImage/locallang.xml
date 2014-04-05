@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'bn_contentelements'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.bnSingleImage.title">Single image</label>
+			<label index="tt_content.bnSingleImage.description">Busy Noggin single image with addtional CSS options</label>
+
+			<label index="flexform.bnSingleImage.sheets.title.image">Image</label>
+			<label index="flexform.bnSingleImage.image">Image</label>
+
+			<label index="flexform.bnSingleImage.sheets.title.appearance">Appearance</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.label">Image Aspect Ratio</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.original">Keep original proportion</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.5">5:1</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.4">4:1</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.3">3:1</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.2">2:1</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.1">1:1</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.43">4:3 (legacy TV)</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.169">16:9 (widescreen)</label>
+			<label index="flexform.bnSingleImage.imageAspectRatio.32">3:2 (35mm)</label>
+			<label index="flexform.bnSingleImage.maxWidth">Max Width (put number in for percentage or pixels or just leave blank to fill containter width)</label>
+			<label index="flexform.bnSingleImage.maxWidthUnit.label">Max Width Unit (pixels or percentage)</label>
+			<label index="flexform.bnSingleImage.maxWidthUnit.percentage">Percentage</label>
+			<label index="flexform.bnSingleImage.maxWidthUnit.pixels">Pixels</label>
+			<label index="flexform.bnSingleImage.margin">Margin (top,right,bottom,left - numbers only, separated by commas e.g. 0, 10,10,0)</label>
+			<label index="flexform.bnSingleImage.padding">Padding (top,right,bottom,left - numbers only, separated by commas e.g. 0, 10,10,0)</label>
+			<label index="flexform.bnSingleImage.borderStyle.label">Border Style</label>
+			<label index="flexform.bnSingleImage.borderStyle.0">None</label>
+			<label index="flexform.bnSingleImage.borderStyle.solid">dotted</label>
+			<label index="flexform.bnSingleImage.borderStyle.dotted">Dotted</label>
+			<label index="flexform.bnSingleImage.borderStyle.dashed">Dashed</label>
+			<label index="flexform.bnSingleImage.borderStyle.double">Double</label>
+			<label index="flexform.bnSingleImage.borderStyle.groove">Groove</label>
+			<label index="flexform.bnSingleImage.borderStyle.ridge">Ridge</label>
+			<label index="flexform.bnSingleImage.borderStyle.inset">Inset</label>
+			<label index="flexform.bnSingleImage.borderStyle.outset">Outset</label>
+			<label index="flexform.bnSingleImage.borderWidth">Border Width</label>
+			<label index="flexform.bnSingleImage.borderColor">Border Color (red, black, #4d4d4d, #808080, etc)</label>
+
+			<label index="flexform.bnSingleImage.sheets.title.advanced">Advanced</label>
+			<label index="flexform.bnSingleImage.cssClass">CSS Class(es)</label>
+			<label index="flexform.bnSingleImage.display">Display</label>
+			<label index="flexform.bnSingleImage.float">Float</label>
+			<label index="flexform.bnSingleImage.position">Position</label>
+			<label index="flexform.bnSingleImage.positionCoordinates">Position Coordinates (x,y)</label>
+			<label index="flexform.bnSingleImage.positionCoordinatesOrigin">Position Coordinates Origin</label>
+			<label index="flexform.bnSingleImage.zIndex">Z-Index</label>
+		</languageKey>
+	</data>
+</T3locallang>

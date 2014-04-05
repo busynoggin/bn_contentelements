@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'bn_contentelements/bnVideoMP4'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.bnVideoMP4.title">MP4 Video</label>
+			<label index="tt_content.bnVideoMP4.description">The Busy Noggin content element for MP4 videos</label>
+
+			<label index="flexform.bnVideoMP4.sheets.title.video">Video</label>
+			<label index="flexform.bnVideoMP4.aspectRatio.label">Aspect Ratio (proportions)</label>
+			<label index="flexform.bnVideoMP4.localFile">Local File</label>
+			<label index="flexform.bnVideoMP4.externalFile">External File Location (include protocol (i.e http://)</label>
+			<label index="flexform.bnVideoMP4.externalLocalVideo.label">Is Video External or Local</label>
+			<label index="flexform.bnVideoMP4.externalLocalVideo.default"></label>
+			<label index="flexform.bnVideoMP4.externalLocalVideo.local">Local Video (on this server)</label>
+			<label index="flexform.bnVideoMP4.externalLocalVideo.external">External Video</label>
+			<label index="flexform.bnVideoMP4.aspectRatio.widescreen">Widescreen (16:9)</label>
+			<label index="flexform.bnVideoMP4.aspectRatio.legacy">Legacy TV (4:3)</label>
+			<label index="flexform.bnVideoMP4.video">Video File</label>
+			<label index="flexform.bnVideoMP4.title">Title or Short Description</label>
+			<label index="flexform.bnVideoMP4.autoPlay">Auto Play (use only if necessary, think of your user)</label>
+
+
+			<label index="flexform.bnVideoMP4.sheets.title.appearance">Appearance</label>
+			<label index="flexform.bnVideoMP4.maxWidth">Max Width (put number in for percentage or pixels or just leave blank to fill containter width)</label>
+			<label index="flexform.bnVideoMP4.maxWidthUnit.label">Max Width Unit (pixels or percentage)</label>
+			<label index="flexform.bnVideoMP4.maxWidthUnit.percentage">Percentage</label>
+			<label index="flexform.bnVideoMP4.maxWidthUnit.pixels">Pixels</label>
+			<label index="flexform.bnVideoMP4.float.label">Float</label>
+			<label index="flexform.bnVideoMP4.float.none">Not Floated</label>
+			<label index="flexform.bnVideoMP4.float.right">Right</label>
+			<label index="flexform.bnVideoMP4.float.left">Left</label>
+			<label index="flexform.bnVideoMP4.margin">Margin (top,right,bottom,left - numbers only, separated by commas e.g. 0, 10,10,0)</label>
+
+
+
+			<label index="flexform.bnVideoMP4.sheets.title.lightbox">Lightbox</label>
+			<label index="flexform.bnVideoMP4.lightboxDisplay">Display in lightbox on larger screens (don't forget to set preview image in video tab)</label>
+			<label index="flexform.bnVideoMP4.image">Preview Image</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.label">Aspect Ratio (proportions) of Image</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.0">Keep Aspect Ratio of Original Image</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.169">Widescreen TV (16:9)</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.43">Standard TV (4:3)</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.32">3:2 (35mm)</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.11">1:1 (square)</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.21">2:1</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.31">3:1</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.41">4:1</label>
+			<label index="flexform.bnVideoMP4.imageAspectRatio.51">5:1</label>
+
+			<label index="flexform.bnVideoMP4.showPlayButton">Show Play Button</label>
+		</languageKey>
+	</data>
+</T3locallang>

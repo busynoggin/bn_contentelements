@@ -3,9 +3,9 @@ if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-tx_weccontentelements_lib::addContentElement($_EXTKEY, 'singleImage');
+tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnSingleImage');
 tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnYoutube');
 tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnVimeo');
-tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnLocalVideo');
+tx_weccontentelements_lib::addContentElement($_EXTKEY, 'bnVideoMP4');
 
 ?>

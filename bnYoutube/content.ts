@@ -35,22 +35,26 @@ tt_content.bnYoutube {
 	30 {
 		if.isTrue.data = t3datastructure : pi_flexform->appearance->maxWidth
 		key.data = t3datastructure : pi_flexform->appearance->maxWidthUnit
+
+		// using straight pixels
 		1 = LOAD_REGISTER
 		1 {
+			bnVideoWidth.data= t3datastructure : pi_flexform->appearance->maxWidth
+			bnVideoStyleWidth {
+				data = register:bnVideoWidth
+				wrap = width:|px;
+			}
+		}
+
+		// Converting percentage to pixels
+		default = LOAD_REGISTER
+		default {
 			tempBNVideoWidth.data= t3datastructure : pi_flexform->appearance->maxWidth
 			tempBNVideoWidth.dataWrap = (|/100)*{register:containerWidth}
 			bnVideoWidth {
 				data = register : tempBNVideoWidth
 				prioriCalc = intval
 			}
-			bnVideoStyleWidth {
-				data = register:bnVideoWidth
-				wrap = width:|px;
-			}
-		}
-		default = LOAD_REGISTER
-		default {
-			bnVideoWidth.data= t3datastructure : pi_flexform->appearance->maxWidth
 			bnVideoStyleWidth {
 				data = register:bnVideoWidth
 				wrap = width:|px;

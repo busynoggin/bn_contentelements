@@ -3,7 +3,7 @@
 		<video>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>Video</sheetTitle>
+					<sheetTitle>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.sheets.title.video</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
@@ -36,7 +36,7 @@
 										<numIndex index="1">169</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.aspectRatio.standard</numIndex>
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.aspectRatio.legacy</numIndex>
 										<numIndex index="1">43</numIndex>
 									</numIndex>
 								</items>
@@ -69,13 +69,13 @@
 		<appearance>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>Appearance</sheetTitle>
+					<sheetTitle>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.sheets.title.appearance</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
 					<maxWidth type="array">
 						<TCEforms type="array">
-							<label>Max Width (leave blank to fill containter width)</label>
+							<label>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.maxWidth</label>
 							<config type="array">
 								<type>input</type>
 								<size>2</size>
@@ -91,16 +91,16 @@
 					</maxWidth>
 					<maxWidthUnit>
 						<TCEforms>
-							<label>Max Width Unit (pixels or percentage)</label>
+							<label>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.maxWidthUnit.label</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">Pixels</numIndex>
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.maxWidthUnit.percentage</numIndex>
 										<numIndex index="1">0</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">Percentage</numIndex>
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.maxWidthUnit.pixels</numIndex>
 										<numIndex index="1">1</numIndex>
 									</numIndex>
 								</items>
@@ -110,20 +110,20 @@
 					</maxWidthUnit>
 					<float>
 						<TCEforms>
-							<label>Float</label>
+							<label>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.float.label</label>
 							<config>
 								<type>select</type>
 								<items type="array">
 									<numIndex index="0" type="array">
-										<numIndex index="0">Not Floated</numIndex>
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.float.none</numIndex>
 										<numIndex index="1">none</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
-										<numIndex index="0">Left</numIndex>
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.float.left</numIndex>
 										<numIndex index="1">left</numIndex>
 									</numIndex>
 									<numIndex index="2" type="array">
-										<numIndex index="0">Right</numIndex>
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.float.right</numIndex>
 										<numIndex index="1">right</numIndex>
 									</numIndex>
 								</items>
@@ -133,7 +133,7 @@
 					</float>
 					<margin type="array">
 						<TCEforms type="array">
-							<label>Margin (top,right,bottom,left - numbers only, separated by commas e.g. 0, 10,10,0)</label>
+							<label>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.margin</label>
 							<config type="array">
 								<type>input</type>
 								<size>15</size>
@@ -147,7 +147,7 @@
 		<lightbox>
 			<ROOT>
 				<TCEforms>
-					<sheetTitle>Appearance</sheetTitle>
+					<sheetTitle>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.sheets.title.lightbox</sheetTitle>
 				</TCEforms>
 				<type>array</type>
 				<el>
@@ -164,7 +164,7 @@
 					</lightboxDisplay>
 					<image>
 						<TCEforms type="array">
-							<label>Image</label>
+							<label>LLL:EXT:bn_contentelements/bnYoutube/locallang.xml:flexform.bnYoutube.image</label>
 							<config>
 								<type>inline</type>
 								<maxitems>1</maxitems>

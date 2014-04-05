@@ -1,5 +1,5 @@
-tt_content.bnLocalVideo = COA
-tt_content.bnLocalVideo {
+tt_content.bnVideoMP4 = COA
+tt_content.bnVideoMP4 {
 
 	// Show the standard content element header.
 	5 = < lib.stdheader
@@ -17,7 +17,7 @@ tt_content.bnLocalVideo {
 	 // Bring in CSS
 	17 = HEADERDATA
 	17 {
-		value = typo3conf/ext/bn_video/res/bn_video.css
+		value = typo3conf/ext/bn_contentelements/res/video/bn_video.css
 		wrap = <link rel="stylesheet" type="text/css" href="|" media="all">
 	}
 
@@ -48,17 +48,6 @@ tt_content.bnLocalVideo {
 			videoHeight.prioriCalc = intval
 			aspectRatioClass = aspect-ratio-169
 			aspectRatio = .5625
-		}
-	}
-
-	// Load register with lightbox fallback class if needed
-
-	35 = LOAD_REGISTER
-	35 {
-		lightboxFallBackClass = video-fallback
-		lightboxFallBackClass {
-			noTrimWrap = | ||
-			if.isTrue.data = t3datastructure : pi_flexform->lightboxDisplay
 		}
 	}
 
@@ -144,8 +133,8 @@ tt_content.bnLocalVideo {
 	 * the following TS object tt_content.bn_localvideo.50
 	 */
 
-	 50 = TEXT
-	 50 {
+	 70 = TEXT
+	 70 {
 	 	value = !!! You need to set a static template for your bn_video player
 	 	wrap = <p style="color:red;font-weight:bold;">|</p>
 	 }

@@ -2,7 +2,6 @@ tt_content.bnVimeo = COA
 tt_content.bnVimeo {
 
 	// Include the necessary Javascript and CSS libraries.
-
 	10 = INCLUDEJSLIBS
 	10.tx_bnvideo = EXT:bn_contentelements/res/video/bn_video.js
 
@@ -16,7 +15,7 @@ tt_content.bnVimeo {
 	20 = LOAD_REGISTER
 	20 {
 		bnVideoWidth >
-		bnVideoWidth >
+		bnVideoHeight >
 		bnVideoStyle >
 		bnVideoStyleFloat >
 		bnVideoFloatClass >
@@ -34,22 +33,24 @@ tt_content.bnVimeo {
 	30 {
 		if.isTrue.data = t3datastructure : pi_flexform->appearance->maxWidth
 		key.data = t3datastructure : pi_flexform->appearance->maxWidthUnit
+
 		1 = LOAD_REGISTER
 		1 {
+			bnVideoWidth.data= t3datastructure : pi_flexform->appearance->maxWidth
+			bnVideoStyleWidth {
+				data = register:bnVideoWidth
+				wrap = width:|px;
+			}
+		}
+
+		default = LOAD_REGISTER
+		default {
 			tempBNVideoWidth.data= t3datastructure : pi_flexform->appearance->maxWidth
 			tempBNVideoWidth.dataWrap = (|/100)*{register:containerWidth}
 			bnVideoWidth {
 				data = register : tempBNVideoWidth
 				prioriCalc = intval
 			}
-			bnVideoStyleWidth {
-				data = register:bnVideoWidth
-				wrap = width:|px;
-			}
-		}
-		default = LOAD_REGISTER
-		default {
-			bnVideoWidth.data= t3datastructure : pi_flexform->appearance->maxWidth
 			bnVideoStyleWidth {
 				data = register:bnVideoWidth
 				wrap = width:|px;
@@ -212,7 +213,7 @@ tt_content.bnVimeo {
 			references {
 				table.field = table
 				uid.field = uid
-				fieldName = flexform_bnvideo_image
+				fieldName = flexform_bnvimeo_image
 			}
 
 			renderObj = IMAGE
@@ -252,5 +253,4 @@ tt_content.bnVimeo {
 		videoStartPoint =
 		autoPlay =
 	}
-
 }
