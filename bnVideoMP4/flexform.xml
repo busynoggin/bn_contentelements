@@ -109,11 +109,11 @@
 								<items type="array">
 									<numIndex index="0" type="array">
 										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.aspectRatio.widescreen</numIndex>
-										<numIndex index="1">0</numIndex>
+										<numIndex index="1">169</numIndex>
 									</numIndex>
 									<numIndex index="1" type="array">
 										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.aspectRatio.legacy</numIndex>
-										<numIndex index="1">1</numIndex>
+										<numIndex index="1">43</numIndex>
 									</numIndex>
 								</items>
 								<default>0</default>
@@ -132,7 +132,7 @@
 					</autoPlay>
 					<image>
 						<TCEforms type="array">
-							<label>LLL:EXT:bn_contentelements/bnSingleImage/locallang.xml:flexform.bnSingleImage.image</label>
+							<label>LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.posterimage</label>
 							<config>
 								<type>inline</type>
 								<maxitems>1</maxitems>
@@ -141,7 +141,7 @@
 								<foreign_sortby>sorting_foreign</foreign_sortby>
 								<foreign_table_field>tablenames</foreign_table_field>
 								<foreign_match_fields type="array">
-									<fieldname>flexform_bnvideomp4_image</fieldname>
+									<fieldname>flexform_bnvideomp4_posterimage</fieldname>
 								</foreign_match_fields>
 								<foreign_label>uid_local</foreign_label>
 								<foreign_selector>uid_local</foreign_selector>
@@ -180,53 +180,6 @@
 							</config>
 						</TCEforms>
 					</image>
-					<imageAspectRatio>
-						<TCEforms>
-							<label>LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.label</label>
-							<config>
-								<type>select</type>
-								<items type="array">
-									<numIndex index="0" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.0</numIndex>
-										<numIndex index="1">0</numIndex>
-									</numIndex>
-									<numIndex index="1" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.169</numIndex>
-										<numIndex index="1">169</numIndex>
-									</numIndex>
-									<numIndex index="2" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.43</numIndex>
-										<numIndex index="1">43</numIndex>
-									</numIndex>
-									<numIndex index="3" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.32</numIndex>
-										<numIndex index="1">32</numIndex>
-									</numIndex>
-									<numIndex index="4" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.11</numIndex>
-										<numIndex index="1">11</numIndex>
-									</numIndex>
-									<numIndex index="5" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.21</numIndex>
-										<numIndex index="1">21</numIndex>
-									</numIndex>
-									<numIndex index="6" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.31</numIndex>
-										<numIndex index="1">31</numIndex>
-									</numIndex>
-									<numIndex index="7" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.41</numIndex>
-										<numIndex index="1">41</numIndex>
-									</numIndex>
-									<numIndex index="8" type="array">
-										<numIndex index="0">LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.imageAspectRatio.51</numIndex>
-										<numIndex index="1">51</numIndex>
-									</numIndex>
-								</items>
-								<default>0</default>
-							</config>
-						</TCEforms>
-					</imageAspectRatio>
 				</el>
 			</ROOT>
 		</video>
@@ -297,7 +250,7 @@
 					</float>
 					<margin type="array">
 						<TCEforms type="array">
-							<label>LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.float.margin</label>
+							<label>LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.margin</label>
 							<config type="array">
 								<type>input</type>
 								<size>15</size>
@@ -326,6 +279,105 @@
 							<onChange>reload</onChange>
 						</TCEforms>
 					</lightboxDisplay>
+					<image>
+						<TCEforms type="array">
+							<label>LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.image</label>
+							<config>
+								<type>inline</type>
+								<maxitems>1</maxitems>
+								<foreign_table>sys_file_reference</foreign_table>
+								<foreign_field>uid_foreign</foreign_field>
+								<foreign_sortby>sorting_foreign</foreign_sortby>
+								<foreign_table_field>tablenames</foreign_table_field>
+								<foreign_match_fields type="array">
+									<fieldname>flexform_bnvideomp4_image</fieldname>
+								</foreign_match_fields>
+								<foreign_label>uid_local</foreign_label>
+								<foreign_selector>uid_local</foreign_selector>
+								<foreign_selector_fieldTcaOverride type="array">
+									<config>
+										<appearance>
+											<elementBrowserType>file</elementBrowserType>
+											<elementBrowserAllowed>gif,jpg,jpeg,tif,bmp,pcx,tga,png</elementBrowserAllowed>
+										</appearance>
+									</config>
+								</foreign_selector_fieldTcaOverride>
+								<foreign_types type="array">
+									<numIndex index="2" type="array">
+										<showitem>--palette--;;filePalette</showitem>
+									</numIndex>
+								</foreign_types>
+								<appearance type="array">
+									<useSortable>TRUE</useSortable>
+									<headerThumbnail type="array">
+											<field>uid_local</field>
+											<width>64</width>
+											<height>64</height>
+									</headerThumbnail>
+
+									<showSynchronizationLink>TRUE</showSynchronizationLink>
+									<enabledControls type="array">
+										<info>FALSE</info>
+										<new>FALSE</new>
+										<dragdrop>TRUE</dragdrop>
+										<sort>FALSE</sort>
+										<hide>TRUE</hide>
+										<delete>TRUE</delete>
+										<delete>TRUE</delete>
+									</enabledControls>
+								</appearance>
+							</config>
+							<displayCond>FIELD:lightboxDisplay:=:1</displayCond>
+						</TCEforms>
+					</image>
+					<imageAspectRatio>
+						<TCEforms>
+							<label>LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.label</label>
+							<config>
+								<type>select</type>
+								<items type="array">
+									<numIndex index="0" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.0</numIndex>
+										<numIndex index="1">0</numIndex>
+									</numIndex>
+									<numIndex index="1" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.169</numIndex>
+										<numIndex index="1">169</numIndex>
+									</numIndex>
+									<numIndex index="2" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.43</numIndex>
+										<numIndex index="1">43</numIndex>
+									</numIndex>
+									<numIndex index="3" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.32</numIndex>
+										<numIndex index="1">32</numIndex>
+									</numIndex>
+									<numIndex index="4" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.11</numIndex>
+										<numIndex index="1">11</numIndex>
+									</numIndex>
+									<numIndex index="5" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.21</numIndex>
+										<numIndex index="1">21</numIndex>
+									</numIndex>
+									<numIndex index="6" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.31</numIndex>
+										<numIndex index="1">31</numIndex>
+									</numIndex>
+									<numIndex index="7" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.41</numIndex>
+										<numIndex index="1">41</numIndex>
+									</numIndex>
+									<numIndex index="8" type="array">
+										<numIndex index="0">LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.imageAspectRatio.51</numIndex>
+										<numIndex index="1">51</numIndex>
+									</numIndex>
+								</items>
+								<default>0</default>
+							</config>
+							<displayCond>FIELD:lightboxDisplay:=:1</displayCond>
+						</TCEforms>
+					</imageAspectRatio>
 					<showPlayButton>
 						<TCEforms type="array">
 							<label>LLL:EXT:bn_contentelements/bnVideoMP4/locallang.xml:flexform.bnVideoMP4.showPlayButton</label>

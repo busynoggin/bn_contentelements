@@ -22,6 +22,7 @@
 			<label index="flexform.bnVideoMP4.video">Video File</label>
 			<label index="flexform.bnVideoMP4.title">Title or Short Description</label>
 			<label index="flexform.bnVideoMP4.autoPlay">Auto Play (use only if necessary, think of your user)</label>
+			<label index="flexform.bnVideoMP4.posterimage">Poster Image (shows before image plays</label>
 
 
 			<label index="flexform.bnVideoMP4.sheets.title.appearance">Appearance</label>
@@ -39,7 +40,7 @@
 
 			<label index="flexform.bnVideoMP4.sheets.title.lightbox">Lightbox</label>
 			<label index="flexform.bnVideoMP4.lightboxDisplay">Display in lightbox on larger screens (don't forget to set preview image in video tab)</label>
-			<label index="flexform.bnVideoMP4.image">Preview Image</label>
+			<label index="flexform.bnVideoMP4.image">Lightbox trigger Image</label>
 			<label index="flexform.bnVideoMP4.imageAspectRatio.label">Aspect Ratio (proportions) of Image</label>
 			<label index="flexform.bnVideoMP4.imageAspectRatio.0">Keep Aspect Ratio of Original Image</label>
 			<label index="flexform.bnVideoMP4.imageAspectRatio.169">Widescreen TV (16:9)</label>

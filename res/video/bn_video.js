@@ -1,13 +1,5 @@
 jQuery(document).ready(function($){
 
-	// If window is small exhange lighbox videos for inline
-	if ($(window).width() <= 570) {
-		$('.youtube-vimeo-lightbox').hide();
-		$('.youtube-vimeo-inline.video-fallback').show();
-		$('.local-video-lightbox').hide();
-		$('.local-video-inline.video-fallback').show();
-	}
-
 	// YouTube and Vimeo Lighbox videos
 	$('.youtube-vimeo-lightbox').bind('click', function() {
 
