@@ -208,8 +208,10 @@ tt_content.bnSingleImage {
 				titleText.data = file:current:title
 				params = class="single-image{register:bnSingleImageCSSClass}" style="{register:bnSingleImageMargin}{register:bnSingleImagePadding}{register:bnSingleImageBorder}{register:bnSingleImageDisplay}{register:bnSingleImageFloat}{register:bnSingleImagePosition}{register:positionCoordinates}{register:bnSingleImageZindex}"
 				params.insertData = 1
-				stdWrap.typolink {
-					parameter.data = file:current:link
+				imageLinkWrap < tt_content.image.20.1.imageLinkWrap
+				imageLinkWrap {
+					enable.field >
+					enable.data = t3datastructure : pi_flexform->image->clickEnlarge
 				}
 			}
 		}

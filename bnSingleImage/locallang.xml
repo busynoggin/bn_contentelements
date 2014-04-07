@@ -11,6 +11,7 @@
 
 			<label index="flexform.bnSingleImage.sheets.title.image">Image</label>
 			<label index="flexform.bnSingleImage.image">Image</label>
+			<label index="flexform.bnSingleImage.clickEnlarge">Enlarge on click</label>
 
 			<label index="flexform.bnSingleImage.sheets.title.appearance">Appearance</label>
 			<label index="flexform.bnSingleImage.imageAspectRatio.label">Image Aspect Ratio</label>
