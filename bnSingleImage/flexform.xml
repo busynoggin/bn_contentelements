@@ -64,7 +64,7 @@
 								<eval>int</eval>
 								<default type="integer">0</default>
 							</config>
-							<label>LL:EXT:bn_contentelements/bnSingleImage/locallang.xml:flexform.bnSingleImage.clickEnlarge</label>
+							<label>LLL:EXT:bn_contentelements/bnSingleImage/locallang.xml:flexform.bnSingleImage.clickEnlarge</label>
 						</TCEforms>
 					</clickEnlarge>
 				</el>
