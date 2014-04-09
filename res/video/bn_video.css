@@ -61,10 +61,6 @@
 	display: block;
 }
 
-.bn-video.video-fallback {
-	display: none;
-}
-
 /* @todo-ron is next next declaration needed? Going to comment out for now */
 /*
 .youtube-vimeo-thumbnail {
