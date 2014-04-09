@@ -20,6 +20,7 @@
 	tempImageHeight >
 	imageHeight >
 	aspectRatioClass >
+	bnVideoBgColor >
 }
 
 // Set width
@@ -82,6 +83,14 @@
 	}
 }
 
+43 = LOAD_REGISTER
+43 {
+	bnVideoBgColor {
+		noTrimWrap = | background-color:black;||
+		if.isFalse.data = t3datastructure : pi_flexform->video->image
+	}
+}
+
 45 = LOAD_REGISTER
 45 {
 	bnVideoStyleMargin {
@@ -100,7 +109,7 @@
 47 = LOAD_REGISTER
 47 {
 	tempBNVideoStyle {
-		dataWrap = {register:bnVideoStyleWidth}{register:bnVideoStyleMargin}{register:bnVideoStyleFloat}
+		dataWrap = {register:bnVideoStyleWidth}{register:bnVideoStyleMargin}{register:bnVideoStyleFloat}{register:bnVideoBgColor}
 	}
 	bnVideoStyle {
 		// if.isTrue.data = register:tempBNVideoStyle
@@ -197,7 +206,7 @@
 	}
 }
 
-## Setup autoplay parameter
+## Setup autoplay parameter for youtube and vimeo
 57 = CASE
 57 {
 	if.isFalse.data = t3datastructure : pi_flexform->lightbox->lightboxDisplay
@@ -208,6 +217,13 @@
 	default.autoPlay = &amp;autoplay=0
 }
 
+## Setup video start parameter
+58 = LOAD_REGISTER
+58.videoStartPoint {
+	data = t3datastructure : pi_flexform->video->startPoint
+	if.isTrue.data = t3datastructure : pi_flexform->video->startPoint
+	noTrimWrap = |&amp;start=||
+}
 
 60 =< lib.stdheader
 
