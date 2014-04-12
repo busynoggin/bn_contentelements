@@ -212,6 +212,8 @@ tt_content.bnSingleImage {
 				imageLinkWrap {
 					enable.field >
 					enable.data = t3datastructure : pi_flexform->image->clickEnlarge
+					typolink.title.data = file:current:title
+					linkParams.title.data = file:current:title
 				}
 			}
 		}
