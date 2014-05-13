@@ -11,8 +11,6 @@ tt_content.bnYoutube {
 		1 = FILES
 		1 {
 			references {
-				table.field = table
-				uid.field = uid
 				fieldName = flexform_bnvideo_image
 			}
 
