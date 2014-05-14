@@ -1,9 +1,12 @@
 tt_content.bnSingleImage = COA
 tt_content.bnSingleImage {
 
+	10 = HEADERDATA
+	10.value = <style> .single-image {margin-bottom: 15px;} </style>
+
 	//Reset register in case there are multiple images on the page
-	5 = LOAD_REGISTER
-	5 {
+	15 = LOAD_REGISTER
+	15 {
 		bnSingleImageCSSClass >
 		bnSingleImageMargin >
 		bnSingleImagePadding >
@@ -15,11 +18,11 @@ tt_content.bnSingleImage {
 	}
 
 	// Set width
-	10 = LOAD_REGISTER
-	10.bnSingleImageWidth.data = register:containerWidth
+	20 = LOAD_REGISTER
+	20.bnSingleImageWidth.data = register:containerWidth
 
-	12 = CASE
-	12 {
+	25 = CASE
+	25 {
 		if.isTrue.data = t3datastructure : pi_flexform->appearance->maxWidth
 		key.data = t3datastructure : pi_flexform->appearance->maxWidthUnit
 
@@ -38,8 +41,8 @@ tt_content.bnSingleImage {
 	}
 
 	// Calculate image height
-	15 = CASE
-	15 {
+	30 = CASE
+	30 {
 		key.data = t3datastructure : pi_flexform->appearance->imageAspectRatio
 		5 = LOAD_REGISTER
 		5 {
@@ -101,8 +104,8 @@ tt_content.bnSingleImage {
 		default.bnSingleImageHeight = 0
 	}
 
-	20 = LOAD_REGISTER
-	20 {
+	35 = LOAD_REGISTER
+	35 {
 		bnSingleImageCSSClass {
 			data = t3datastructure : pi_flexform->advanced->cssClass
 			noTrimWrap = | ||
@@ -116,8 +119,14 @@ tt_content.bnSingleImage {
 				1.current = 1
 				1.noTrimWrap = | |px|
 			}
-			wrap = margin:|;
-			if.isTrue.data = t3datastructure : pi_flexform->appearance->margin
+			innerWrap = margin:|;
+
+			if {
+				isNull.data = t3datastructure : pi_flexform->appearance->margin
+				negate = 1
+			}
+
+			// if.isTrue.data = t3datastructure : pi_flexform->appearance->margin
 		}
 		bnSingleImagePadding {
 			data = t3datastructure : pi_flexform->appearance->padding
@@ -153,8 +162,8 @@ tt_content.bnSingleImage {
 		}
 	}
 
-	25 = CASE
-	25 {
+	40 = CASE
+	40 {
 		if.isTrue.data = t3datastructure : pi_flexform->advanced->positionCoordinates
 		key.data  = t3datastructure : pi_flexform->advanced->positionCoordinatesOrigin
 		1 = LOAD_REGISTER
@@ -183,11 +192,11 @@ tt_content.bnSingleImage {
 	}
 
 	// Render header
-	30 =< lib.stdheader
+	50 =< lib.stdheader
 
 	// Render image
-	40 = CASE
-	40 {
+	60 = CASE
+	60 {
 		key.data = register:bnSingleImageHeight
 
 		0 = FILES
