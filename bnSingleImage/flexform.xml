@@ -57,6 +57,10 @@
 										<delete>TRUE</delete>
 									</enabledControls>
 								</appearance>
+								<behavior>
+									<localizationMode>select</localizationMode>
+									<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+								</behavior>
 							</config>
 						</TCEforms>
 					</image>

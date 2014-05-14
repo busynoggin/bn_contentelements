@@ -193,8 +193,6 @@ tt_content.bnSingleImage {
 		0 = FILES
 		0 {
 			references {
-				table.field = table
-				uid.field = uid
 				fieldName = flexform_bnsingleimage_image
 			}
 
