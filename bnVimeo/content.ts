@@ -4,6 +4,9 @@ tt_content.bnVimeo {
 	// Includes objects 20 - 69
 	<INCLUDE_TYPOSCRIPT: source="FILE: EXT:bn_contentelements/Configuration/TypoScript/video_base.ts">
 
+	## Override default wrap for this
+	58.videoStartPoint.noTrimWrap = |#t=||
+
 	70 = CASE
 	70 {
 		key.data = t3datastructure : pi_flexform->lightbox->lightboxDisplay
@@ -31,7 +34,7 @@ tt_content.bnVimeo {
 					innerWrap.if.isTrue.data = t3datastructure : pi_flexform->lightbox->showPlayButton
 					innerWrap2 = <div class="youtube-vimeo-wrap">|</div>
 					typolink {
-						parameter.dataWrap = http://player.vimeo.com/video/{t3datastructure : pi_flexform->video->videoID}?title=0&amp;byline=0&amp;portrait=0
+						parameter.dataWrap = http://player.vimeo.com/video/{t3datastructure : pi_flexform->video->videoID}{register:videoStartPoint}?title=0&amp;byline=0&amp;portrait=0
 						ATagParams.dataWrap = class="bn-video youtube-vimeo-lightbox{register:aspectRatioClass}{register:bnVideoFloatClass}"{register:bnVideoStyle}
 						title.data = t3datastructure : pi_flexform->video->title
 						target = _blank
@@ -41,7 +44,7 @@ tt_content.bnVimeo {
 		}
 		default = TEXT
 		default {
-			dataWrap = <div class="bn-video youtube-vimeo-inline{register:aspectRatioClass}{register:bnVideoFloatClass}"{register:bnVideoStyle}><div class="spacer">&nbsp;</div><iframe src="http://player.vimeo.com/video/{t3datastructure : pi_flexform->video->videoID}?title=0&amp;byline=0&amp;portrait=0{register:autoPlay}"  frameborder="0" webkitAllowFullScreen allowfullscreen></iframe></div><!-- end .youtube-vimeo-lightbox -->
+			dataWrap = <div class="bn-video youtube-vimeo-inline{register:aspectRatioClass}{register:bnVideoFloatClass}"{register:bnVideoStyle}><div class="spacer">&nbsp;</div><iframe src="http://player.vimeo.com/video/{t3datastructure : pi_flexform->video->videoID}{register:videoStartPoint}?title=0&amp;byline=0&amp;portrait=0{register:autoPlay}"  frameborder="0" webkitAllowFullScreen allowfullscreen></iframe></div><!-- end .youtube-vimeo-lightbox -->
 		}
 	}
 
