@@ -120,13 +120,6 @@ tt_content.bnSingleImage {
 				1.noTrimWrap = | |px|
 			}
 			innerWrap = margin:|;
-
-			if {
-				isNull.data = t3datastructure : pi_flexform->appearance->margin
-				negate = 1
-			}
-
-			// if.isTrue.data = t3datastructure : pi_flexform->appearance->margin
 		}
 		bnSingleImagePadding {
 			data = t3datastructure : pi_flexform->appearance->padding
