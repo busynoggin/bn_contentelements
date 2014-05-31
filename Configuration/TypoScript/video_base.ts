@@ -217,7 +217,7 @@
 	default.autoPlay = &amp;autoplay=0
 }
 
-## Setup video start parameter
+## Setup video start parameter: Note there is adjust in Vimeo for this
 58 = LOAD_REGISTER
 58.videoStartPoint {
 	data = t3datastructure : pi_flexform->video->startPoint

@@ -1,4 +1,7 @@
 <T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
 	<sheets>
 		<video>
 			<ROOT>
@@ -88,6 +91,10 @@
 										<delete>TRUE</delete>
 									</enabledControls>
 								</appearance>
+								<behavior>
+									<localizationMode>select</localizationMode>
+									<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+								</behavior>
 							</config>
 							<displayCond>FIELD:externalLocalVideo:=:1</displayCond>
 						</TCEforms>

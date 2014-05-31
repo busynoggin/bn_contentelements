@@ -1,4 +1,7 @@
 <T3DataStructure>
+	<meta type="array">
+		<langDisable>1</langDisable>
+	</meta>
 	<sheets>
 		<video>
 			<ROOT>
@@ -54,6 +57,15 @@
 							</config>
 						</TCEforms>
 					</autoPlay>
+					<startPoint>
+						<TCEforms>
+							<label>LLL:EXT:bn_contentelements/bnVimeo/locallang.xml:flexform.bnVimeo.startPoint</label>
+							<config>
+								<type>input</type>
+								<size>20</size>
+							</config>
+						</TCEforms>
+					</startPoint>
 				</el>
 			</ROOT>
 		</video>
@@ -200,6 +212,10 @@
 										<delete>TRUE</delete>
 									</enabledControls>
 								</appearance>
+								<behavior>
+									<localizationMode>select</localizationMode>
+									<localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+								</behavior>
 							</config>
 							<displayCond>FIELD:lightboxDisplay:=:1</displayCond>
 						</TCEforms>

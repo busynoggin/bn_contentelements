@@ -16,6 +16,7 @@
 			<label index="flexform.bnVimeo.videoID">Vimeo ID Number</label>
 			<label index="flexform.bnVimeo.title">Title or Short Description</label>
 			<label index="flexform.bnVimeo.autoPlay">Auto Play (use only if necessary, think of your user)</label>
+			<label index="flexform.bnVimeo.startPoint">Starting point in seconds (leave blank to start at beginning. Setting this will trigger autoplay)</label>
 
 			<label index="flexform.bnVimeo.sheets.title.appearance">Appearance</label>
 			<label index="flexform.bnVimeo.maxWidth">Max Width (put number in for percentage or pixels or just leave blank to fill containter width)</label>
