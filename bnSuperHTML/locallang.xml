@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'bn_contentelements'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tt_content.bnSuperHTML.title">Super HTML</label>
+			<label index="tt_content.bnSuperHTML.description">Busy Noggin Super HTML Content Element</label>
+
+			<label index="flexform.bnSuperHTML.sheets.title.html">HTML</label>
+			<label index="flexform.bnSuperHTML.htmlFile">Path to HTML File</label>
+			<label index="flexform.bnSuperHTML.htmlInline">Inline HTML</label>
+
+			<label index="flexform.bnSuperHTML.sheets.title.javascript">JavaScript</label>
+			<label index="flexform.bnSuperHTML.javascriptLibs">Paths to JavaScript Library Files (one path per line)</label>
+			<label index="flexform.bnSuperHTML.javascriptFiles">Paths to JavaScript Files (one path per line)</label>
+			<label index="flexform.bnSuperHTML.javascriptInline">Inline JavaScript (will be placed in head)</label>
+
+
+			<label index="flexform.bnSuperHTML.sheets.title.css">CSS</label>
+			<label index="flexform.bnSuperHTML.cssFiles">Paths to CSS Files (one path per line)</label>
+			<label index="flexform.bnSuperHTML.cssIline">Inline CSS (in head)</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

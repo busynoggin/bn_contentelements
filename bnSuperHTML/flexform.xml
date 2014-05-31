@@ -1,0 +1,93 @@
+<T3DataStructure>
+	<sheets>
+		<html>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.sheets.title.html</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<htmlFile type="array">
+						<TCEforms type="array">
+							<config type="array">
+							<type>input</type>
+							<size>30</size>
+							<max>256</max>
+							<eval>trim</eval>
+						</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.htmlFile</label>
+						</TCEforms>
+					</htmlFile>
+					<htmlInline type="array">
+						<TCEforms type="array">
+							<config type="array">
+								<type>text</type>
+							</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.htmlInline</label>
+						</TCEforms>
+					</htmlInline>
+				</el>
+			</ROOT>
+		</html>
+		<css>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.sheets.title.css</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<cssFiles type="array">
+						<TCEforms type="array">
+							<config type="array">
+								<type>text</type>
+							</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.cssFiles</label>
+						</TCEforms>
+					</cssFiles>
+					<cssIline type="array">
+						<TCEforms type="array">
+							<config type="array">
+								<type>text</type>
+							</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.cssIline</label>
+						</TCEforms>
+					</cssIline>
+				</el>
+			</ROOT>
+		</css>
+		<javascript>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.sheets.title.javascript</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<javascriptLibs type="array">
+						<TCEforms type="array">
+							<config type="array">
+								<type>text</type>
+							</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.javascriptLibs</label>
+						</TCEforms>
+					</javascriptLibs>
+					<javascriptFiles type="array">
+						<TCEforms type="array">
+							<config type="array">
+								<type>text</type>
+							</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.javascriptFiles</label>
+						</TCEforms>
+					</javascriptFiles>
+					<javascriptInline type="array">
+						<TCEforms type="array">
+							<config type="array">
+								<type>text</type>
+							</config>
+							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.javascriptInline</label>
+						</TCEforms>
+					</javascriptInline>
+				</el>
+			</ROOT>
+		</javascript>
+	</sheets>
+</T3DataStructure>
