@@ -4,13 +4,11 @@ tt_content.bnSuperHTML {
 	10 = TEXT
 	10 {
 		data = t3datastructure : pi_flexform->html->htmlFile
-		noTrimWrap = |HTML file |<br />|
 	}
 
 	15 = TEXT
 	15 {
 		data = t3datastructure : pi_flexform->html->htmlInline
-		noTrimWrap = |HTML Inline |<br />|
 	}
 
 	20 = TEXT
