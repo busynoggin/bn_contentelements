@@ -26,8 +26,8 @@ tt_content.bnSuperHTML {
 
 	25 = TEXT
 	25 {
-		data = t3datastructure : pi_flexform->css->cssIline
 		noTrimWrap = |CSS Inline |<br />|
+		data = t3datastructure : pi_flexform->css->cssInline
 	}
 
 	30 = TEXT

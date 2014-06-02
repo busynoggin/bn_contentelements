@@ -44,14 +44,14 @@
 							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.cssFiles</label>
 						</TCEforms>
 					</cssFiles>
-					<cssIline type="array">
+					<cssInline type="array">
 						<TCEforms type="array">
 							<config type="array">
 								<type>text</type>
 							</config>
 							<label>LLL:EXT:bn_contentelements/bnSuperHTML/locallang.xml:flexform.bnSuperHTML.cssIline</label>
 						</TCEforms>
-					</cssIline>
+					</cssInline>
 				</el>
 			</ROOT>
 		</css>
