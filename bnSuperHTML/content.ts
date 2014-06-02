@@ -19,14 +19,19 @@ tt_content.bnSuperHTML {
 		split {
 			token.char = 10
 			cObjNum = 1
-			1.current = 1
-			1.noTrimWrap = |CSS FILE |<br />|
+
+			1 {
+				1 = INCLUDECSS
+				1 {
+					1 = {current : 1}
+					1.insertData = 1
+				}
+			}
 		}
 	}
 
-	25 = TEXT
+	25 = CSSINLINE
 	25 {
-		noTrimWrap = |CSS Inline |<br />|
 		data = t3datastructure : pi_flexform->css->cssInline
 	}
 
@@ -36,12 +41,16 @@ tt_content.bnSuperHTML {
 		split {
 			token.char = 10
 			cObjNum = 1
-			1 = INCLUDEJSLIBS
-			1.10.current = 1
-			1.10.insertData = 1
+
+			1 {
+				1 = INCLUDEJSLIBS
+				1 {
+					1 = {current : 1}
+					1.insertData = 1
+				}
+			}
 		}
 	}
-
 
 	35 = TEXT
 	35 {
@@ -49,15 +58,20 @@ tt_content.bnSuperHTML {
 		split {
 			token.char = 10
 			cObjNum = 1
-			1.current = 1
-			1.noTrimWrap = |JS FILES |<br />|
+
+			1 {
+				1 = INCLUDEJS
+				1 {
+					1 = {current : 1}
+					1.insertData = 1
+				}
+			}
 		}
 	}
 
-	40 = TEXT
+	40 = INLINEJS
 	40 {
 		data = t3datastructure : pi_flexform->javascript->javascriptInline
-		noTrimWrap = |JS Inline |<br />|
 	}
 }
 
