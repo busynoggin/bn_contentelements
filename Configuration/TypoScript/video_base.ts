@@ -56,6 +56,30 @@
 	}
 }
 
+// Setup height
+41 = CASE
+41 {
+	key.data = t3datastructure : pi_flexform->video->aspectRatio
+
+	# Standard (4x3)
+	43 = LOAD_REGISTER
+	43 {
+		tempBnVideoHeight.data = register:bnVideoWidth
+		tempBnVideoHeight.wrap = (|*.75)
+		bnVideoHeight.data = register : tempBnVideoHeight
+		bnVideoHeight.prioriCalc = intval
+	}
+
+	# Widescreen (16x9)
+	default = LOAD_REGISTER
+	default {
+		tempBnVideoHeight.data = register : bnVideoWidth
+		tempBnVideoHeight.wrap = (|*.5625)
+		bnVideoHeight.data = register : tempBnVideoHeight
+		bnVideoHeight.prioriCalc = intval
+	}
+}
+
 42 = CASE
 42 {
 	if.isTrue.data = t3datastructure : pi_flexform->appearance->float
