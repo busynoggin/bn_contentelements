@@ -11,16 +11,20 @@
 //Reset register in case there are multiple videos on the page
 30 = LOAD_REGISTER
 30 {
-	bnVideoWidth >
-	bnVideoHeight >
-	bnVideoStyle >
-	bnVideoStyleFloat >
-	bnVideoFloatClass >
-	bnVideoStyleMargin >
-	tempImageHeight >
-	imageHeight >
-	aspectRatioClass >
-	bnVideoBgColor >
+	bnVideoWidth =
+	bnVideoHeight =
+	bnVideoStyle =
+	bnVideoStyleWidth =
+	bnVideoStyleFloat =
+	bnVideoFloatClass =
+	bnVideoStyleMargin =
+	tempImageHeight =
+	imageHeight =
+	aspectRatioClass =
+	bnVideoBgColor =
+	tempBNVideoWidth =
+	videoStartPoint =
+	autoPlay =
 }
 
 // Set width
@@ -253,12 +257,3 @@
 
 // This is the rendering object and will be provided by the content element
 70 >
-
-
-
-#unset the startPoint, autoPlay and lightboxFallBackClass in case other videos are on the page
-90 = LOAD_REGISTER
-90 {
-	videoStartPoint =
-	autoPlay =
-}
