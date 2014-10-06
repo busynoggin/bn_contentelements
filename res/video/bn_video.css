@@ -21,13 +21,21 @@
 	position: relative;
 }
 
+.local-video-inline {
+	margin-bottom: 15px;
+}
+
 .youtube-vimeo-inline.left,
-.youtube-vimeo-lightbox.left {
+.youtube-vimeo-lightbox.left,
+.local-video-inline.left {
 	margin-right: 15px;
 }
 
+
+
 .youtube-vimeo-inline.right,
-.youtube-vimeo-lightbox.right {
+.youtube-vimeo-lightbox.right,
+.local-video-inline.right {
 	margin-left: 15px;
 }
 
